@@ -3,9 +3,10 @@
 function App() {
   return (
     <>
-
+ 
 <h1 className="title">Welcome</h1>
-    <p>first-app</p>
+    <h2>first-app</h2>
+  <p>version2</p> 
     </>
   
   ); 

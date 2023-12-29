@@ -1,15 +1,24 @@
 import React from "react";
+import { Link , NavLink } from "react-router-dom";
+
+
 
 export default function Header() {
   return (
     <div>
       <header className="hide-when-mobile">
-        <h1>Courses 4 Arab</h1>
+        <h1>First-App</h1>
         <ul className="flex">
+        <li className="main-list">
+            <NavLink className="main-link" to="/">
+              Home
+            </NavLink>  
+            </li>
+
           <li className="main-list">
-            <a className="main-link" href="html">
+            <NavLink className="main-link" to="/html">
               HTML
-            </a>
+            </NavLink>
             {/* <ul className="sub-ul">
               <li>
                 <a href="">Full Course</a>
@@ -23,10 +32,9 @@ export default function Header() {
             </ul> */}
           </li>
           <li className="main-list">
-            <a className="main-link" href="css">
-              {" "}
-              CSS{" "}
-            </a>
+            <NavLink className="main-link" to= "/css">
+              CSS
+            </NavLink>
             {/* <ul className="sub-ul">
               <li>
                 <a href="">Full Course</a>
@@ -51,10 +59,10 @@ export default function Header() {
             </ul> */}
           </li>
           <li className="main-list">
-            <a className="main-link" href="javascript">
-              {" "}
-              JavaScript{" "}
-            </a>
+            <NavLink className="main-link" to="/javascript">
+              
+              JavaScript
+            </NavLink>
             {/* <ul className="sub-ul sub-of-js">
               <li>
                 <a href="">coming soon🔥</a>
@@ -65,7 +73,7 @@ export default function Header() {
       </header>
 
 
-      {/* <header style={{ backgroundColor: "blue" }} className="show-when-mobile">
+       <header style={{ backgroundColor: "blue" }} className="show-when-mobile">
         <h1>Courses 4 Arab</h1>
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />
@@ -132,7 +140,7 @@ export default function Header() {
             </ul>
           </div>
         </div>
-      </header> */}
+      </header> 
     </div>
   );
 }

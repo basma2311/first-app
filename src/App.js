@@ -8,7 +8,6 @@ import Javascript from "./Pages/javascript";
 function App() {
   return (
     <div className="App">
-      <h1 style={{ color: "red" }}>Welcome to React Router!</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/html" element={<Html />} />
@@ -17,7 +16,7 @@ function App() {
       </Routes>
     </div>
   );
-  return <div>App.js file</div>;
+  // return <div>App.js file</div>;
 }
 
 export default App;
